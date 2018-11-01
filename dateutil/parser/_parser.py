@@ -264,29 +264,29 @@ class parserinfo(object):
 
     # m from a.m/p.m, t from ISO T separator
     JUMP = [" ", ".", ",", ";", "-", "/", "'",
-            "at", "on", "and", "ad", "m", "t", "of",
+            "at", "on", "and", "ad", "m", "t", "of", "le", "a"
             "st", "nd", "rd", "th"]
 
-    WEEKDAYS = [("Mon", "Monday"),
-                ("Tue", "Tuesday"),     # TODO: "Tues"
-                ("Wed", "Wednesday"),
-                ("Thu", "Thursday"),    # TODO: "Thurs"
-                ("Fri", "Friday"),
-                ("Sat", "Saturday"),
-                ("Sun", "Sunday")]
-    MONTHS = [("Jan", "January"),
-              ("Feb", "February"),      # TODO: "Febr"
-              ("Mar", "March"),
-              ("Apr", "April"),
-              ("May", "May"),
-              ("Jun", "June"),
-              ("Jul", "July"),
-              ("Aug", "August"),
-              ("Sep", "Sept", "September"),
-              ("Oct", "October"),
-              ("Nov", "November"),
-              ("Dec", "December")]
-    HMS = [("h", "hour", "hours"),
+    WEEKDAYS = [("Mon", "Monday", "Lundi"),
+                ("Tue", "Tuesday", "Mardi"),     # TODO: "Tues"
+                ("Wed", "Wednesday", "Mercredi"),
+                ("Thu", "Thursday", "Jeudi"),    # TODO: "Thurs"
+                ("Fri", "Friday", "Vendredi"),
+                ("Sat", "Saturday", "Samedi"),
+                ("Sun", "Sunday", "Dimanche")]
+    MONTHS = [("Jan", "January", "Janvier"),
+              ("Feb", "February", "Fevrier"),      # TODO: "Febr"
+              ("Mar", "March", "Mars"),
+              ("Apr", "April", "Avril"),
+              ("May", "May", "Mai"),
+              ("Jun", "June", "Juin"),
+              ("Jul", "July", "Juillet"),
+              ("Aug", "August", "Aout"),
+              ("Sep", "Sept", "September", "Septembre"),
+              ("Oct", "October", "Octobre"),
+              ("Nov", "November", "Novembre"),
+              ("Dec", "December", "Decembre")]
+    HMS = [("h", "hour", "hours", "heure"),
            ("m", "minute", "minutes"),
            ("s", "second", "seconds")]
     AMPM = [("am", "a"),
